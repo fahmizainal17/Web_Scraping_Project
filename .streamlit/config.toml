@@ -1,0 +1,6 @@
+[theme]
+base="dark"
+primaryColor="#FFD700"  # royal yellow
+backgroundColor="#1e1e1e"
+secondaryBackgroundColor="#333333"
+textColor="#ffffff"

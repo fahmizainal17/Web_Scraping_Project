@@ -14,7 +14,8 @@ class Job_Scraper:
 
         results = s.find(id='ResultsContainer')
 
-        job_title = results.find_all('h2', class_='title is-5')
+        job_titles = results.find_all('h2', class_='title is-5')
 
-        for job in job_title:
-            print(job.text)
+        # Extract text from each job title
+        titles = [job.text for job in job_titles]
+        return titles

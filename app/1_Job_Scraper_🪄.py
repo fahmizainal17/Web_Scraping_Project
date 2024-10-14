@@ -1,13 +1,13 @@
 import streamlit as st
-from backend import JobScraper
+from backend import Job_Scraper
 
 # Title of the Streamlit app
-st.title("Job Scraper")
+st.title("Scraper Apps🪄")
 
 # Button to scrape jobs
 if st.button("Scrape Jobs"):
-    # Call the scrape_jobs method from JobScraper class
-    job_titles = JobScraper.scrape_jobs()
+    # Call the scrape_jobs method from Job_Scraper class
+    job_titles = Job_Scraper.scrape_jobs()
     
     # Display the results in the Streamlit app
     if job_titles:

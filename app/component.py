@@ -39,8 +39,8 @@ def page_style():
                 right: 2rem;
             }}
 
-            .stButton>button {{background-color: #003366; color: white !important;}}
-            .stDownloadButton>button {{background-color: #003366; color: white !important;}}
+            .stButton>button {{background-color: #00dadb; color: white !important;}}
+            .stDownloadButton>button {{background-color: #00dadb; color: white !important;}}
 
             /* Certification Card Styles */
             .cert-card {{
@@ -92,7 +92,7 @@ def page_style():
         # HTML and JavaScript to open YouTube in a new tab
         new_tab_button = """
         <a href="https://www.youtube.com/watch?v=VeUiVCb7ZmQ?si=GzSBUP3zs1hEkigI" target="_blank">
-            <button style="background-color: #003366; color: white; border: none; padding: 10px 20px; text-align: center; font-size: 16px; margin: 4px 2px; cursor: pointer; border-radius: 8px;">
+            <button style="background-color: #00dadb; color: white; border: none; padding: 10px 20px; text-align: center; font-size: 16px; margin: 4px 2px; cursor: pointer; border-radius: 8px;">
                 🎵 Play Music while Reading
             </button>
         </a>

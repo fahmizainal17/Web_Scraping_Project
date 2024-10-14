@@ -1,11 +1,15 @@
 import streamlit as st
 from backend import Job_Scraper
 from component import page_style
+from PIL import Image
 
 page_style()
 
 # Title of the Streamlit app
-st.title("Scraper Apps🪄")
+st.title("Job Portal Scraper 🪄")
+
+pic = Image.open("assets/Job_Portal.png")
+st.image(pic, use_column_width=True)
 
 # Button to scrape jobs
 if st.button("Scrape Jobs"):

@@ -3,16 +3,18 @@ from bs4 import BeautifulSoup
 import pandas as pd
 
 class Job_Scraper:
-    # URL of the IMDb Top 250 Movies page
+    # URL of job portal
     url = 'https://realpython.github.io/fake-jobs/'
 
-    html =requests.get(url)
+    @classmethod
+    def scrape_jobs(cls):
+        html =requests.get(cls.url)
 
-    s = BeautifulSoup(html.content, 'html.parser')
+        s = BeautifulSoup(html.content, 'html.parser')
 
-    results = s.find(id='ResultsContainer')
+        results = s.find(id='ResultsContainer')
 
-    job_title = results.find_all('h2', class_='title is-5')
+        job_title = results.find_all('h2', class_='title is-5')
 
-    for job in job_title:
-        print(job.text)
+        for job in job_title:
+            print(job.text)

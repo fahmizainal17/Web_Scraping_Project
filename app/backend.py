@@ -18,9 +18,14 @@ class Job_Scraper:
 
         company_titles = results.find_all('h3', class_='subtitle is-6 company')
 
-        # Extract text from each job title
+        # Extract text from each job title and company name
         titles = [job.text for job in job_titles]
-        return titles
+        companies = [company.text for company in company_titles]
 
-        company_titles = [company.text for company in company_titles]
-        return company_titles
+        # Create a DataFrame with both job titles and company names
+        jobs_df = pd.DataFrame({
+            "Job Titles": titles,
+            "Company Names": companies
+        })
+
+        return jobs_df

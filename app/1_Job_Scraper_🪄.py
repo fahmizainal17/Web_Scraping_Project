@@ -1,5 +1,8 @@
 import streamlit as st
 from backend import Job_Scraper
+from component import page_style
+
+page_style()
 
 # Title of the Streamlit app
 st.title("Scraper Apps🪄")

@@ -3,7 +3,6 @@ from backend import Synthetic_Job_Scraper , Adnexio_Job_Scraper , Future_Job_Scr
 from component import page_style
 from PIL import Image
 import pandas as pd
-from venv_fahmi.bin.imdbpy2sql import SFX_START
 
 # Apply custom styles
 page_style()
@@ -85,4 +84,3 @@ with tab2:
     Adnexio_Job_Portal_Scraper()
 with tab3:
     Placeholder_for_Future_Projects()
-

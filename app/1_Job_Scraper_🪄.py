@@ -3,6 +3,7 @@ from backend import Synthetic_Job_Scraper , Adnexio_Job_Scraper , Future_Job_Scr
 from component import page_style
 from PIL import Image
 import pandas as pd
+from venv_fahmi.bin.imdbpy2sql import SFX_START
 
 # Apply custom styles
 page_style()
@@ -55,7 +56,7 @@ class Adnexio_Job_Portal_Scraper:
             else:
                 st.write("No job metrics found.")
 
-class Placeholder_for_Future_Projects:
+class Placeholder_for_Future_Projects: 
     def __init__(self):
         st.title("Placeholder for Future Projects 🪄")
 
@@ -84,3 +85,4 @@ with tab2:
     Adnexio_Job_Portal_Scraper()
 with tab3:
     Placeholder_for_Future_Projects()
+

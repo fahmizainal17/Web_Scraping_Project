@@ -8,3 +8,5 @@ page_style()
 
 # Add a title
 st.title("Placeholder for Other Apps 📈")
+
+st.markdown("This is a placeholder for other future apps.")

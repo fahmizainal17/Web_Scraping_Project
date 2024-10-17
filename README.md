@@ -10,7 +10,7 @@
 ---
 
 ## **📋 Overview**
-The **Web_Scraping_Project** is a web application designed to scrape job listings from various portals, providing users with an efficient platform for gathering and viewing job data. The project uses Streamlit for interactivity, making it easy to visualize and analyze the scraped information.
+The **Web_Scraping_Project** is a web application designed to scrape job listings from various portals,and other platform too providing users with an efficient platform for gathering and viewing job data. The project uses Streamlit for interactivity, making it easy to visualize and analyze the scraped information.
 
 ---
 

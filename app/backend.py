@@ -118,41 +118,11 @@ class Future_Job_Scraper:
 
     @classmethod
     def scrape_jobs(cls):
-        # Send a request to the job portal
-        html = requests.get(cls.url)
-
-        # Parse the HTML content
-        s = BeautifulSoup(html.content, 'html.parser')
-        # Find all the job containers
-        results = s.find_all('div', class_='border-xl relative mx-auto mb-4 grid w-full cursor-pointer grid-cols-12 rounded-xl bg-adx-white py-6')
-
-        # Find all job titles and company names
-        job_titles = results.find_all('p', class_='w-5/6 truncate font-semibold capitalize text-adx-darkGreen')
-        company_titles = results.find_all('p', class_='mb-2 w-5/6 truncate text-sm font-semibold capitalize')
-        company_location = results.find_all('p', class_='locationw-5/6 truncate text-sm')
-        job_salary = results.find_all('p',class_='w-5/6 truncate text-sm')
-
-        # Extract text from each job title and company name
-        titles = [job.text for job in job_titles]
-        companies = [company.text for company in company_titles]
-        companies_loc = [loc.text for loc in company_location]
-        salary = [sal.text for sal in job_salary]
-
-        # Ensure all lists have the same length by finding the minimum length
-        min_length = min(len(titles), len(companies), len(companies_loc), len(salary))
-
-        # Slice the lists to the minimum length
-        titles = titles[:min_length]
-        companies = companies[:min_length]
-        companies_loc = companies_loc[:min_length]
-        salary = salary[:min_length]
-
-        # Combine the titles and companies into a DataFrame
-        jobs_df = pd.DataFrame({
-            'Job Titles': titles,
-            'Company Names': companies,
-            'Company Locations': companies_loc,
-            'Salary': salary
-        })
-
+        jobs_df = pd.DataFrame(
+            {'Product': ['Sample_Product'],
+             'Price': ['Sample_Price'],
+             'Company': ['Company_Name'],
+             'Location': ['Location_Product'],
+             'Details': ['Details_Product']}
+        )
         return jobs_df

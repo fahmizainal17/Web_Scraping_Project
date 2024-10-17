@@ -3,7 +3,7 @@
 <!-- Badge to Visit Project -->
 <div align="center"> 
     <a href="https://web-scraping-projects.streamlit.app/">
-        <img src="https://img.shields.io/badge/Visit%20Web%20Scraping%20Project-brightblue?style=for-the-badge&logo=streamlit" alt="Visit Web Scraping Project"/>
+        <img src="https://img.shields.io/badge/Visit%20Web%20Scraping%20Project-brightBlue?style=for-the-badge&logo=streamlit" alt="Visit Web Scraping Project"/>
     </a>
 </div>
 

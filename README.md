@@ -1,4 +1,4 @@
-# **Web_Scraping_Project 💼**
+# **Web_Scraping_Project 💼** [![wakatime](https://wakatime.com/badge/user/ae82a943-125e-489a-a656-e35fe84d587b/project/2dcb61f0-6e5b-4832-b294-a508eac6d691.svg)](https://wakatime.com/badge/user/ae82a943-125e-489a-a656-e35fe84d587b/project/2dcb61f0-6e5b-4832-b294-a508eac6d691)
 
 <!-- Badge to Visit Project -->
 <div align="center"> 
